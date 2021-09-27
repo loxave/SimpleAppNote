@@ -3,6 +3,7 @@
     package="com.zen4r17.simpleappnote">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimpleAppNote"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.zen4r17.frontend.Activity.EditActivity"></activity>
+        <activity android:name="com.zen4r17.frontend.Activity.UploadActivity" />
+        <activity android:name="com.zen4r17.frontend.Activity.EditActivity" />
         <activity android:name="com.zen4r17.frontend.Activity.CreateActivity" />
         <activity android:name="com.zen4r17.frontend.Activity.MainActivity">
             <intent-filter>
